@@ -11,7 +11,7 @@ import {Link, withRouter} from 'react-router-dom'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
-    return {color: '#f57c00'}
+    return {color: '#efefef'}
   else
     return {color: '#fffde7'}
 }
@@ -24,8 +24,8 @@ const isPartActive = (history, path) => {
 const Menu = withRouter(({history}) => (
   <AppBar position="fixed" style={{zIndex:12343455}}>
     <Toolbar>
-      <Typography variant="h6" color="inherit">
-        MERN Classroom
+      <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            Vignan Hire
       </Typography>
       <div>
         <Link to="/">
@@ -38,18 +38,18 @@ const Menu = withRouter(({history}) => (
       {
         !auth.isAuthenticated() && (<span>
           <Link to="/signup">
-            <Button style={isActive(history, "/signup")}>Sign up
+            <Button style={isActive(history, "/signup")}>Register
             </Button>
           </Link>
           <Link to="/signin">
-            <Button style={isActive(history, "/signin")}>Sign In
+            <Button style={isActive(history, "/signin")}>Login
             </Button>
           </Link>
         </span>)
       }
       {
         auth.isAuthenticated() && (<span>
-          {auth.isAuthenticated().user.educator && (<Link to="/teach/courses"><Button style={isPartActive(history, "/teach/")}><Library/> Teach</Button></Link>)}
+          {auth.isAuthenticated().user.educator && (<Link to="/teach/courses"><Button style={isPartActive(history, "/teach/")}>Teach</Button></Link>)}
           <Link to={"/user/" + auth.isAuthenticated().user._id}>
             <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>My Profile</Button>
           </Link>

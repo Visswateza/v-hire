@@ -1,7 +1,7 @@
 import Course from '../models/course.model'
 import extend from 'lodash/extend'
 import fs from 'fs'
-import errorHandler from './../helpers/dbErrorHandler'
+import errorHandler from '../helpers/dbErrorHandler'
 import formidable from 'formidable'
 import defaultImage from './../../client/assets/images/default.png'
 

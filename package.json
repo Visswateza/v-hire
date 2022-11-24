@@ -1,8 +1,8 @@
 {
-  "name": "mern-classroom",
-  "version": "2.0.0",
-  "description": "A MERN stack based online classroom application",
-  "author": "Shama Hoque",
+  "name": "scirp",
+  "description": "React JS App",
+  "version": "1.0.0",
+  "author": "Team A2",
   "license": "MIT",
   "keywords": [
     "react",
@@ -13,9 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-classroom.git"
+    "url": "git+https://github.com/PranithChowdary/SCIRP.git"
   },
-  "homepage": "https://github.com/shamahoque/mern-classroom",
+  "bugs": {
+    "url": "https://github.com/PranithChowdary/SCIRP/issues"
+  },
+  "homepage": "https://github.com/PranithChowdary/SCIRP#readme",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
@@ -54,6 +57,7 @@
     "jsonwebtoken": "8.5.1",
     "lodash": "4.17.15",
     "mongoose": "5.9.7",
+    "mui": "^0.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hot-loader": "4.12.20",
