@@ -12,6 +12,7 @@ import NewCourse from './course/NewCourse'
 //import Courses from './course/Courses'
 import Course from './course/Course'
 import EditCourse from './course/EditCourse'
+import Editor from './core/editor'
 import MyCourses from './course/MyCourses'
 import Enrollment from './enrollment/Enrollment'
 
@@ -27,7 +28,7 @@ const MainRouter = () => {
         <Route path="/user/:userId" component={Profile}/>
         <Route path="/course/:courseId" component={Course}/>
         <PrivateRoute path="/teach/courses" component={MyCourses}/>
-        
+        <PrivateRoute path="/editor" component={Editor}/>
         <PrivateRoute path="/teach/course/new" component={NewCourse}/>
         <PrivateRoute path="/teach/course/edit/:courseId" component={EditCourse}/>
         <PrivateRoute path="/teach/course/:courseId" component={Course}/>

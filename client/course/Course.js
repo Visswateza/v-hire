@@ -172,7 +172,7 @@ export default function Course ({match}) {
                 <CardHeader
                   title={course.name}
                   subheader={<div>
-                        <Link to={"/user/"+course.instructor._id} className={classes.sub}>By {course.instructor.name}</Link>
+                        {/* <Link to={"/user/"+course.instructor._id} className={classes.sub}>By {course.instructor.name}</Link> */}
                         <span className={classes.category}>{course.category}</span>
                       </div>
                     }
